@@ -16,7 +16,7 @@ func main() {
 	var userEmail string
 	var userTickets int
 
-	// ask user for their name
+	// ask user for their information
 	fmt.Println("Enter your first name: ")
 	fmt.Scan(&firstName) //using a pointer
 
