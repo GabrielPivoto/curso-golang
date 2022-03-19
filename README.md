@@ -1,2 +1,3 @@
 # curso-golang
-Curso de Golang
+
+Projeto de reserva de tickets feito em Go
