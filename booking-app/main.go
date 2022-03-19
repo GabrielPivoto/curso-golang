@@ -13,7 +13,7 @@ func main() {
 
 	var firstName string
 	var lastName string
-	var email string
+	var userEmail string
 	var userTickets int
 
 	// ask user for their name
@@ -24,11 +24,11 @@ func main() {
 	fmt.Scan(&lastName)
 
 	fmt.Println("Enter your email: ")
-	fmt.Scan(&email)
+	fmt.Scan(&userEmail)
 
 	fmt.Println("How many tickets would you like to order? ")
 	fmt.Scan(&userTickets)
 
-	fmt.Printf("Thank you %v %v for booking %v tickets. You will receive a confirmation email at %v", firstName, lastName, userTickets, email)
+	fmt.Printf("Thank you %v %v for booking %v tickets. You will receive a confirmation email at %v", firstName, lastName, userTickets, userEmail)
 
 }
