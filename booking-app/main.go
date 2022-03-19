@@ -15,30 +15,32 @@ func main() {
 
 	//var bookings = [50]string{} //array
 
-	var firstName string
-	var lastName string
-	var userEmail string
-	var userTickets uint
+	for {
+		var firstName string
+		var lastName string
+		var userEmail string
+		var userTickets uint
 
-	// ask user for their information
-	fmt.Println("Enter your first name: ")
-	fmt.Scan(&firstName) //using a pointer
+		// ask user for their information
+		fmt.Println("Enter your first name: ")
+		fmt.Scan(&firstName) //using a pointer
 
-	fmt.Println("Enter your last name: ")
-	fmt.Scan(&lastName)
+		fmt.Println("Enter your last name: ")
+		fmt.Scan(&lastName)
 
-	fmt.Println("Enter your email: ")
-	fmt.Scan(&userEmail)
+		fmt.Println("Enter your email: ")
+		fmt.Scan(&userEmail)
 
-	fmt.Println("How many tickets would you like to order? ")
-	fmt.Scan(&userTickets)
+		fmt.Println("How many tickets would you like to order? ")
+		fmt.Scan(&userTickets)
 
-	remainingTickets -= userTickets
-	bookings = append(bookings, firstName+" "+lastName)
+		remainingTickets -= userTickets
+		bookings = append(bookings, firstName+" "+lastName)
 
-	fmt.Printf("Thank you %v %v for booking %v tickets. You will receive a confirmation email at %v\n", firstName, lastName, userTickets, userEmail)
-	fmt.Printf("%v tickets remaing for the %v\n", remainingTickets, conferenceName)
+		fmt.Printf("Thank you %v %v for booking %v tickets. You will receive a confirmation email at %v\n", firstName, lastName, userTickets, userEmail)
+		fmt.Printf("%v tickets remaing for the %v\n", remainingTickets, conferenceName)
 
-	fmt.Printf("These are all our bookings: %v\n", bookings)
+		fmt.Printf("These are all our bookings: %v\n", bookings)
+	}
 
 }
