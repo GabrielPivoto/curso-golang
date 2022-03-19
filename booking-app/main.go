@@ -44,11 +44,17 @@ func main() {
 		fmt.Printf("%v tickets remaing for the %v\n", remainingTickets, conferenceName)
 
 		var firstNames []string
-		for _, booking := range bookings {
+		for _, booking := range bookings { // _ is a variable not being used
 			var names = strings.Fields(booking)
 			firstNames = append(firstNames, names[0])
 		}
 		fmt.Printf("These are all our bookings: %v\n", firstNames)
+
+		if remainingTickets == 0 {
+			fmt.Println("All tickets have been sold! Come back next year!")
+			break
+		}
+
 	}
 
 }
