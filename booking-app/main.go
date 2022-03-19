@@ -6,7 +6,8 @@ func main() {
 	conferenceName := "Go Conference"
 	const conferenceTickets = 50 //constant
 	var remainingTickets uint = 50
-	var bookings [50]string
+	//var bookings [50]string //array with fixed size
+	var bookings []string //slice with dynamic size
 
 	fmt.Printf("Welcome to our %v booking application\n", conferenceName)
 	fmt.Printf("We have %v tickets in total and there are %v tickets remaining\n", conferenceTickets, remainingTickets)
